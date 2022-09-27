@@ -41,7 +41,10 @@ class SkStep extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => onTap?.call(),
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
       child: Container(
+        margin: const EdgeInsets.symmetric(vertical: 8),
         height: theme?.height ?? defaultStepHeight,
         width: width ?? defaultStepWidth,
         decoration: BoxDecoration(
